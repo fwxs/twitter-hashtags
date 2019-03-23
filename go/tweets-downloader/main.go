@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(twitter.Hi("Roberto"))
+	fmt.Println(twitter.Hi("Rob!"))
 }
