@@ -21,7 +21,7 @@ class Broom:
         return re.sub(self._no_alpha_regex, ' ', line)
 
     def clean_stopwords(self, line):
-        return " ".join((word for word in line.split() if word not in self.stopwords))
+        return " ".join([word for word in line.split() if word not in self.stopwords])
 
     def cleaner(self, line):
         clean_data = self.clean_no_alpha(self.clean_hashtag(self.clean_rt(line)))
